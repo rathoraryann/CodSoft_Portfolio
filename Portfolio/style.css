@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+#contact p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+
+a:hover {
+    cursor: pointer;
+    color: darkblue; 
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    #about .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    #about img {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .project {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .project img {
+        max-width: 200px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin-top: 15px;
+    }
+
+    #about img {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 2000px) {
+    .project {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
